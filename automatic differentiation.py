@@ -21,7 +21,7 @@ a.grad.zero_()
 y2=a.sum()
 y2.backward()
 print(a.grad)
-
+print(a.data)
 a.grad.zero_()
 y2=torch.dot(a,a)
 y2.backward()#only trough backward the grad in x would be add up
